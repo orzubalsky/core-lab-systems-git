@@ -8,32 +8,34 @@
   <body>
     <h1>Git Introduction</h1>
 
-    <h2>Chapter 10</h2>
+    <h2>Chapter 04</h2>
 
     <h3>
-      If you want to go back to a previous commit
+      Staging Area
     </h3>
 
-    <ol>
-      <li>
-        List the recent changes that were made to the repository - <code>git log</code>
-      </li>
-      <li>
-        Identify the commit you want to go back to and copy its hash
-      </li>
-      <li>
-        Load changes with either <code>git checkout hash</code> if you just want to look or with <code>git reset hash</code> if you want to permanently go back.
-      </li>
-    </ol>
+    <p>
+      A snapshot of changes you are about to commit to your repository
+    </p>
 
     <h3>
       <code>
-        git reset
+        git add
       </code>
     </h3>
 
     <p>
-      Sets the code to a particular commit and erases the current changes to the working directory. Use with caution!
+      Add changes in files that you choose to the staging area. This is a necessary step before committing changes.
+    </p>
+
+    <h3>
+      <code>
+        git commit
+      </code>
+    </h3>
+
+    <p>
+      Create a commit (a snapshot of the code base) from the changes that are in the staging area. Committing is how you you save the changes you made to the code in a particular point in time. Every commit has a unique identifier in the form of a hash.
     </p>
   </body>
 </html>
