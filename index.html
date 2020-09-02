@@ -8,36 +8,32 @@
   <body>
     <h1>Git Introduction</h1>
 
-    <h2>Chapter 09</h2>
+    <h2>Chapter 10</h2>
 
     <h3>
-      While working on a project
+      If you want to go back to a previous commit
     </h3>
 
     <ol>
       <li>
-        Get most recent changes - <code>git pull</code>
+        List the recent changes that were made to the repository - <code>git log</code>
       </li>
       <li>
-        Work on your code
+        Identify the commit you want to go back to and copy its hash
       </li>
       <li>
-        Very frequently, after you've completed a small change that you're pleased with:
-        <ul>
-          <li>
-            Stage the changes to be committed - <code>git add path/to/file path/to/another/file</code>
-          </li>
-          <li>
-            Commit the changes - <code>git commit</code>
-          </li>
-          <li>
-            Type a descriptive message describing the changes you've made, save, and close the file.
-          </li>
-        </ul>
-      </li>
-      <li>
-        Sync changes to remote repository if you are using one (in this class we will host remote repositories on Github) - <code>git push</code>
+        Load changes with either <code>git checkout hash</code> if you just want to look or with <code>git reset hash</code> if you want to permanently go back.
       </li>
     </ol>
+
+    <h3>
+      <code>
+        git reset
+      </code>
+    </h3>
+
+    <p>
+      Sets the code to a particular commit and erases the current changes to the working directory. Use with caution!
+    </p>
   </body>
 </html>
