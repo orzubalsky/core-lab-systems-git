@@ -8,26 +8,36 @@
   <body>
     <h1>Git Introduction</h1>
 
-    <h2>Chapter 06</h2>
+    <h2>Chapter 09</h2>
 
     <h3>
-      <code>
-        git init
-      </code>
+      While working on a project
     </h3>
 
-    <p>
-      Initialize a new repository in the current directory you are in.
-    </p>
-
-    <h3>
-      <code>
-        git clone
-      </code>
-    </h3>
-
-    <p>
-      Copy an existing repository into the current directory you are in.
-    </p>
+    <ol>
+      <li>
+        Get most recent changes - <code>git pull</code>
+      </li>
+      <li>
+        Work on your code
+      </li>
+      <li>
+        Very frequently, after you've completed a small change that you're pleased with:
+        <ul>
+          <li>
+            Stage the changes to be committed - <code>git add path/to/file path/to/another/file</code>
+          </li>
+          <li>
+            Commit the changes - <code>git commit</code>
+          </li>
+          <li>
+            Type a descriptive message describing the changes you've made, save, and close the file.
+          </li>
+        </ul>
+      </li>
+      <li>
+        Sync changes to remote repository if you are using one (in this class we will host remote repositories on Github) - <code>git push</code>
+      </li>
+    </ol>
   </body>
 </html>
